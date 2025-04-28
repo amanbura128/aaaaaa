@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+        }
+
+        .navbar{
+            position: fixed;
+            top:0;
+            background-color: black;
+            color:white;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .container{
+            display: flex;
+            padding: 70px;
+            height: 2000px;
+        }
+        
+        .sidebar{
+            width: 250px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar"> My blog</div>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sticky-toc">
+                <h3>Content</h3>
+                <ul>
+                    <li><a href="#intro"> Introduction</a></li>
+                    <li><a href="#part1"> part1</a></li>
+                    <li><a href="#part2"> part2</a></li>
+                    <li><a href="#con"> Con</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <div class="section-article" id="intro">
+                <div class="section-header">Introduction</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi pariatur autem porro aliquid libero cumque vitae debitis provident 
+                    assumenda ipsum, vero aut aspernatur, ipsa ratione temporibus distinctio atque, et laboriosam!</p>
+            </div>
+                  
+            <div class="section-article" id="part1">
+                <div class="section-header">Introduction</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi pariatur autem porro aliquid libero cumque vitae debitis provident 
+                    assumenda ipsum, vero aut aspernatur, ipsa ratione temporibus distinctio atque, et laboriosam!</p>
+            </div>
+            <div class="section-article" id="part2">
+                <div class="section-header">Introduction</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi pariatur autem porro aliquid libero cumque vitae debitis provident 
+                    assumenda ipsum, vero aut aspernatur, ipsa ratione temporibus distinctio atque, et laboriosam!</p>
+            </div>
+
+            <div class="section-article" id="con">
+                <div class="section-header">Conc</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi pariatur autem porro aliquid libero cumque vitae debitis provident 
+                    assumenda ipsum, vero aut aspernatur, ipsa ratione temporibus distinctio atque, et laboriosam!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
