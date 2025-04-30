@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+    font-family: Arial, sans-serif;
+}
+
+
+.profile-box {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+    height: 400px;
+}
+
+
+.profile-image {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 20px;
+   font-style: oblique;
+   font-weight: 600;
+}
+
+.follow-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 23px;
+    width: 260px;
+}
+
+.follow-button:hover {
+    background-color: #0056b3; 
+}
+
+</style>
+<body>
+    <div class="profile-box">
+        <img src="https://assets.mycast.io/characters/zade-meadows-7909661-normal.jpg?1693993261" alt="Profile Picture" class="profile-image">
+        <p class="description">
+            Hello! I am Zade ,<br>a web design enthusiast.
+        </p>
+        <button class="follow-button">Follow</button>
+    </div>
+</body>
+</html>
